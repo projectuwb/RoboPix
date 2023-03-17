@@ -2,14 +2,30 @@
 <html lang="en">
 <head>
   <title>Title of the document</title>
+  <style>
+    /* Center the container div both horizontally and vertically */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Set the size of the iframe */
+    #iframe-container {
+      width: 600px;
+      height: 600px;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
-<iframe
-    src="https://gateway.ipfscdn.io/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc721.html?contract=0xB495F228a5aF4cE73fC9dE4AE71ee16827f3599d&chain=%7B%22name%22%3A%22Base+Goerli+Testnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fbase-goerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22basegor%22%2C%22chainId%22%3A84531%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22base-goerli%22%7D"
-    width="600px"
-    height="600px"
-    style="max-width:100%;"
-    frameborder="0"
-    ></iframe>
+  <!-- Wrap the iframe in a container div and center it -->
+  <div id="iframe-container">
+    <iframe
+      src="https://gateway.ipfscdn.io/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc721.html?contract=0xB495F228a5aF4cE73fC9dE4AE71ee16827f3599d&chain=%7B%22name%22%3A%22Base+Goerli+Testnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fbase-goerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22basegor%22%2C%22chainId%22%3A84531%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22base-goerli%22%7D"
+      frameborder="0">
+    </iframe>
+  </div>
 </body>
 </html>
